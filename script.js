@@ -68,5 +68,9 @@ setTimeout(() => {
 }, 2250);
 
 setTimeout(() => {
-  loadingText.textContent = "";
+  loadingText.textContent = "And nooow!";
 }, 4500);
+
+setTimeout(() => {
+  loadingText.textContent = "";
+}, 7000);
