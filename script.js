@@ -2,10 +2,6 @@
 
 const feedDisplay = document.querySelector("#feed");
 
-/* green-gold-api-production.up.railway.app/news */
-/* fetch(process.env.API_URL) */
-/* http://localhost:8000/news */
-
 fetch("http://green-gold-api-production.up.railway.app/news")
   .then((response) => {
     if (!response.ok) {
