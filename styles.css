@@ -74,13 +74,26 @@ header h1 {
   position: relative;
 }
 
+/* .mark::before {
+
+  background-color: rgb(42, 208, 42);
+  content: "";
+  position: absolute;
+  width: calc(80% + 90px);
+  height: 120%;
+  z-index: -1;
+  transform: rotate(-2deg);
+} */
+
 .mark::before {
   /* Highlight color */
   background-color: rgb(42, 208, 42);
   content: "";
   position: absolute;
-  width: calc(120% + 10px);
-  height: 100%;
+  left: -40px;
+  right: -40px;
+  top: -4px;
+  height: 110%;
   z-index: -1;
   transform: rotate(-2deg);
 }

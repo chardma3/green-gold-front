@@ -1,6 +1,6 @@
 const feedDisplay = document.querySelector("#feed");
 
-fetch("http://green-gold-api-production.up.railway.app/news")
+fetch("https://green-gold-api-production.up.railway.app/news")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Error fetching news articles");
@@ -18,7 +18,7 @@ fetch("http://green-gold-api-production.up.railway.app/news")
     });
   })
   .catch((err) => {
-    const errorMessage = `<p>Error: ${err.message}</p>`;
+    const errorMessage = `<p>Oh no!: ${err.message}</p>`;
     feedDisplay.insertAdjacentHTML("beforeend", errorMessage);
   });
 
