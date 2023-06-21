@@ -73,18 +73,6 @@ header h1 {
 .mark {
   position: relative;
 }
-
-/* .mark::before {
-
-  background-color: rgb(42, 208, 42);
-  content: "";
-  position: absolute;
-  width: calc(80% + 90px);
-  height: 120%;
-  z-index: -1;
-  transform: rotate(-2deg);
-} */
-
 .mark::before {
   /* Highlight color */
   background-color: rgb(42, 208, 42);
@@ -115,6 +103,13 @@ header h1 {
   text-decoration: none;
   background-color: rgb(31, 181, 31);
   padding: 1em 1.5em;
+}
+
+.err-msg {
+  color: rgb(42, 208, 42);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 /* progress bar */

@@ -18,22 +18,23 @@ fetch("https://green-gold-api-production.up.railway.app/news")
     });
   })
   .catch((err) => {
-    const errorMessage = `<p>Oh no!: ${err.message}</p>`;
+    const errorMessage = `<p class="err-msg">Oh no! There's been an error: ${err.message}</p>`;
     feedDisplay.insertAdjacentHTML("beforeend", errorMessage);
   });
 
 const loadingText = document.getElementById("loadingText");
 
-loadingText.textContent = "One second... just loading";
+loadingText.textContent =
+  "Finding articles on green technology, AI, stocks, start-ups, and trends!";
 
 setTimeout(() => {
   loadingText.textContent = "Almost there!";
-}, 2250);
+}, 3500);
 
 setTimeout(() => {
-  loadingText.textContent = "And nooow!";
-}, 4500);
+  loadingText.textContent = "And here are some awesome articles for you!";
+}, 5750);
 
 setTimeout(() => {
   loadingText.textContent = "";
-}, 7000);
+}, 8000);
