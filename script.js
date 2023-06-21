@@ -1,5 +1,3 @@
-/* require("dotenv").config(); */
-
 const feedDisplay = document.querySelector("#feed");
 
 fetch("http://green-gold-api-production.up.railway.app/news")
@@ -23,37 +21,6 @@ fetch("http://green-gold-api-production.up.railway.app/news")
     const errorMessage = `<p>Error: ${err.message}</p>`;
     feedDisplay.insertAdjacentHTML("beforeend", errorMessage);
   });
-
-/* var i = 0;
-function move() {
-  if (i == 0) {
-    i = 1;
-    var elem = document.getElementById("myBar");
-    var loadingText = document.getElementById("loadingText");
-    var width = 1;
-    var id = setInterval(frame, 10);
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
-        i = 0;
-        loadingText.textContent = "Loading complete";
-      } else {
-        width++;
-        elem.style.width = width + "%";
-      }
-    }
-  }
-}
-
-setTimeout(move, 100); */
-
-/* setTimeout(() => {
-  loadingText.textContent = "";
-}, 2250);
-
-setTimeout(() => {
-  loadingText.textContent = "";
-}, 2250); */
 
 const loadingText = document.getElementById("loadingText");
 

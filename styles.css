@@ -81,8 +81,6 @@ header h1 {
   position: absolute;
   width: calc(120% + 10px);
   height: 100%;
-  left: -25px;
-  /*  bottom: 0; */
   z-index: -1;
   transform: rotate(-2deg);
 }
@@ -124,7 +122,6 @@ header h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 23px;
-  /* color: white; */
   color: rgb(42, 208, 42);
 }
 
