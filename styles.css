@@ -106,6 +106,28 @@ header h1 {
   padding: 1em 1.5em;
 }
 
+/* progress bar */
+#myProgress {
+  width: 100%;
+  background-color: grey;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background: linear-gradient(to right, #78ffd6, #a8ff78);
+}
+
+#loadingText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 23px;
+  /* color: white; */
+  color: rgb(42, 208, 42);
+}
+
 @media (max-width: 1000px) {
   .feed {
     grid-template-columns: repeat(2, 1fr);
