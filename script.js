@@ -15,6 +15,7 @@ fetch("https://green-gold-api-production.up.railway.app/news")
         <a href="${article.url}">Website</a>
       </div>`;
       feedDisplay.insertAdjacentHTML("beforeend", articleItem);
+      loadingText.textContent = "";
     });
   })
   .catch((err) => {
@@ -34,7 +35,3 @@ setTimeout(() => {
 setTimeout(() => {
   loadingText.textContent = "And here are some awesome articles for you!";
 }, 5750);
-
-setTimeout(() => {
-  loadingText.textContent = "";
-}, 8000);
