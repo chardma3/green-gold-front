@@ -29,9 +29,10 @@ loadingText.textContent =
   "Finding articles on green technology, AI, stocks, start-ups, and trends!";
 
 setTimeout(() => {
-  loadingText.textContent = "Almost there!";
-}, 3500);
+  if (loadingText.textContent !== "") loadingText.textContent = "Almost there!";
+}, 3500); // if the textContent of the loadingContent is not empty then fill the textContent with almost there else not
 
-setTimeout(() => {
+/* setTimeout(() => {
   loadingText.textContent = "And here are some awesome articles for you!";
 }, 5750);
+ */
